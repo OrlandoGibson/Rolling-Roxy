@@ -1,0 +1,32 @@
+{
+    "assets": {
+        "map_tiles": { "type": "image", "source": "assets/images/tiles_spritesheet.png" },
+        "player_spritesheet": { "type": "spritesheet", "source": "assets/images/player_spritesheet.png", "frame_width": 28, "frame_height": 46, "frames": 5, "margin": 1, "spacing": 1 },
+        "slime_image": { "type": "image", "source": "assets/images/slime.png" },
+        "fly_spritesheet": { "type": "spritesheet", "source": "assets/images/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2 },
+        "goal_image": { "type": "image", "source": "assets/images/goal.png" },
+        "coin_image": { "type": "image", "source": "assets/images/coin2.png" },
+        "fireball_image": { "type": "image", "source": "assets/images/fireboss.png" },
+        "stone_enemy_image": { "type": "image", "source": "assets/images/stone_enemy.png" },
+        "boss_image": { "type": "image", "source": "assets/images/boss.png" },
+	"bg_music": { "type": "sound", "source": "assets/audio/levelthree.ogg" },
+        
+        "level_tilemap": { "type": "tilemap", "source": "assets/maps/boss_level_map.json" }
+    },
+    "groups": [
+        "goals",
+        "checkpoints",
+        "coins",
+        "fireballs",
+        "enemy_fireballs",
+        "invincible_enemies",
+        "enemies",
+        "players",
+        "items",
+        "hud"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tiles"]
+    }
+}
