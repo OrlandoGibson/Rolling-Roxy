@@ -12,7 +12,7 @@
         "fireball_item_image": { "type": "image", "source": "assets/images/fireball.png" },
 	"bg_music": { "type": "sound", "source": "assets/audio/levelone.ogg" },
 	"life_sound": { "type": "sound", "source": "assets/audio/junk.ogg" },
-	"coin_sound": { "type": "sound", "source": "assets/audio/grumpycat.ogg" },
+	"coin_sound": { "type": "sound", "source": "assets/audio/grumpycat.mp3" },
 	"kill_sound": { "type": "sound", "source": "assets/audio/AlienDeathRay.ogg" },
         
         "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" }
