@@ -1,0 +1,34 @@
+{
+    "assets": {
+        "map_tiles": { "type": "image", "source": "assets/images/tiles_spritesheet.png" },
+        "player_spritesheet": { "type": "spritesheet", "source": "assets/images/player_spritesheet.png", "frame_width": 28, "frame_height": 46, "frames": 5, "margin": 1, "spacing": 1 },
+        "slime_image": { "type": "image", "source": "assets/images/slime.png" },
+        "fly_spritesheet": { "type": "spritesheet", "source": "assets/images/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2 },
+        "goal_image": { "type": "image", "source": "assets/images/goal.png" },
+        "checkpoint_image": { "type": "image", "source": "assets/images/checkpoint.png" },
+        "coin_image": { "type": "image", "source": "assets/images/coin.png" },
+        "fireball_image": { "type": "image", "source": "assets/images/fireball.png" },
+        "life_item_image": { "type": "image", "source": "assets/images/life_item.png" },
+        "fireball_item_image": { "type": "image", "source": "assets/images/fireball.png" },
+	"bg_music": { "type": "sound", "source": "assets/audio/levelone.ogg" },
+	//"life_sound": { "type": "sound", "source": "assets/audio/junk.ogg" },
+	//"coin_sound": { "type": "sound", "source": "assets/audio/grumpycat.mp3" },
+	//"kill_sound": { "type": "sound", "source": "assets/audio/AlienDeathRay.ogg" },
+        
+        "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" }
+    },
+    "groups": [
+        "goals",
+        "checkpoints",
+        "coins",
+        "fireballs",
+        "enemies",
+        "players",
+        "items",
+        "hud"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tiles", "map_tiles"]
+    }
+}
