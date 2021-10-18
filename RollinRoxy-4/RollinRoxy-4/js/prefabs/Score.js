@@ -9,6 +9,8 @@ Platformer.Score = function (game_state, position, properties) {
     this.game_state.groups[properties.group].add(this);
     
     this.fixedToCamera = true;
+
+   
 };
 
 Platformer.Score.prototype = Object.create(Phaser.Text.prototype);
