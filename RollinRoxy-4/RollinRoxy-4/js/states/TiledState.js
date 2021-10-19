@@ -137,7 +137,7 @@ Platformer.TiledState.prototype.game_over = function () {
 Platformer.TiledState.prototype.init_hud = function () {
     "use strict";
     var score_position, score, lives_position, lives;
-    score_position = new Phaser.Point(20, 20);
+    score_position = new Phaser.Point(10, 10);
     score = new Platformer.Score(this, score_position, {"text": "Score: 0", "group": "hud"});
     this.prefabs["score"] = score;
     

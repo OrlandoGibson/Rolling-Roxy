@@ -187,6 +187,24 @@
                  "y":177
                 }, 
                 {
+                  "gid":146,
+                  "height":35,
+                  "id":9,
+                  "name":"stone_enemy1",
+                  "properties":
+                     {
+                      "":"",
+                      "group":"invincible_enemies",
+                      "texture":"stone_enemy_image"
+                     },
+                  "rotation":0,
+                  "type":"stone_enemy",
+                  "visible":true,
+                  "width":35,
+                  "x":177,
+                  "y":177
+                 }, 
+                {
                  "gid":146,
                  "height":35,
                  "id":9,
@@ -204,6 +222,24 @@
                  "x":840,
                  "y":177
                 }, 
+                {
+                  "gid":146,
+                  "height":35,
+                  "id":9,
+                  "name":"stone_enemy1",
+                  "properties":
+                     {
+                      "":"",
+                      "group":"invincible_enemies",
+                      "texture":"stone_enemy_image"
+                     },
+                  "rotation":0,
+                  "type":"stone_enemy",
+                  "visible":true,
+                  "width":35,
+                  "x":1268,
+                  "y":177
+                 }, 
                 {
                  "gid":146,
                  "height":35,
