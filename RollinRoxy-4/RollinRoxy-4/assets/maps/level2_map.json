@@ -137,7 +137,7 @@
                      "group":"enemies",
                      "score":"100",
                      "texture":"slime_image",
-                     "walking_distance":"200",
+                     "walking_distance":"50",
                      "walking_speed":"75"
                     },
                  "rotation":0,
@@ -158,7 +158,7 @@
                      "group":"enemies",
                      "score":"100",
                      "texture":"slime_image",
-                     "walking_distance":"200",
+                     "walking_distance":"190",
                      "walking_speed":"75"
                     },
                  "rotation":0,
