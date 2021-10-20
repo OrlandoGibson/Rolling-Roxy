@@ -5,40 +5,49 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 		<title>Rollin Roxy</title>
-		<script type="text/javascript" src="js/phaser.js"></script>
-        
-        <script src="js/states/BootState.js"></script>
-        <script src="js/states/LoadingState.js"></script>
-        <script src="js/states/TiledState.js"></script>
-        <script src="js/prefabs/Prefab.js"></script>
-        <script src="js/prefabs/Player.js"></script>
-        <script src="js/prefabs/Enemy.js"></script>
-        <script src="js/prefabs/GroundEnemy.js"></script>
-        <script src="js/prefabs/FlyingEnemy.js"></script>
-        <script src="js/prefabs/RunningEnemy.js"></script>
-        <script src="js/prefabs/StoneEnemy.js"></script>
-        <script src="js/prefabs/Goal.js"></script>
-        <script src="js/prefabs/Checkpoint.js"></script>
-        <script src="js/prefabs/Coin.js"></script>
-        <script src="js/prefabs/Score.js"></script>
-        <script src="js/prefabs/Lives.js"></script>
-        <script src="js/prefabs/Item.js"></script>
-        <script src="js/prefabs/LifeItem.js"></script>
-        <script src="js/prefabs/FireballItem.js"></script>
-        <script src="js/prefabs/Fireball.js"></script>
-        <script src="js/prefabs/Boss.js"></script>
-        
-        <script type="text/javascript" src="js/main.js"></script>
+
         
 		<style>
-		  body {
-		    padding: 0px;
-		    margin: 0px;
-		    background-color: rgb(0, 0, 0);
-		  }
-		  </style>
+			body {
+				padding: 0px;
+				margin: 0px;
+				background-color: rgb(26, 170, 139);
+			}
+
+		  	#instructions {
+				background: url('assets/images/instruction-bg.png');
+				background-size: cover;
+				background-position-x: center;
+				background-position-y: center;
+				width: 100vw;
+				height: 100vh;
+		  	}
+
+
+		  	.button {
+				position: absolute;
+				top: 500px;
+				left: 50%;
+				margin-left: -50px;
+				width: 100px;
+		  	}
+			  
+		</style>
 	</head>
 
+
 	<body>
+
+        <div id="instructions">
+            
+            <a href="game.html">
+
+				<img class="button" src="assets/images/life_item.png" alt="">
+
+            </a>
+            
+        </div>
+
+
 	</body>
 </html>
