@@ -115,7 +115,27 @@
                  "width":39,
                  "x":1048,
                  "y":369
-                }, 
+                },
+
+                {
+                  "height":37,
+                  "id":25,
+                  "name":"fireball_item0",
+                  "properties":
+                     {
+                      "":"",
+                      "group":"items",
+                      "texture":"fireball_item_image"
+                     },
+                  "rotation":0,
+                  "type":"fireball_item",
+                  "visible":true,
+                  "width":39,
+                  "x":200,
+                  "y":500
+                 },
+
+
                 {
                  "height":37,
                  "id":5,

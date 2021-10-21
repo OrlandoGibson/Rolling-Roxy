@@ -1,9 +1,22 @@
 var Platformer = Platformer || {};
 
+
+
+
 Platformer.Boss = function (game_state, position, properties) {
     "use strict";
     Platformer.Prefab.call(this, game_state, position, properties);
+
+
+    //========================//
+    //  ADDED
+    //========================//
+    this.life_points = 9;
+    //========================//
+    //========================//
+    //========================//
     
+
     this.attack_rate = +properties.attack_rate;
     this.attack_speed = +properties.attack_speed;
     this.walking_speed = +properties.walking_speed;
@@ -29,7 +42,15 @@ Platformer.Boss.prototype.constructor = Platformer.Boss;
 Platformer.Boss.prototype.update = function () {
     "use strict";
     this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
-    
+
+    //========================//
+    //  ADDED
+    //========================//
+    this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.fireballs, this.get_shoted, null, this);
+    //========================//
+    //========================//
+    //========================//
+
     // if walked the maximum distance, change the velocity, but not the scale
     if (Math.abs(this.x - this.previous_x) >= this.walking_distance) {
         this.body.velocity.x *= -1;
@@ -39,6 +60,7 @@ Platformer.Boss.prototype.update = function () {
 
 Platformer.Boss.prototype.shoot = function () {
     "use strict";
+
     // works the same way player shoot, but using a different pool group
     var fireball, fireball_position, fireball_properties;
     fireball = this.game_state.groups.enemy_fireballs.getFirstDead();
@@ -51,3 +73,40 @@ Platformer.Boss.prototype.shoot = function () {
         fireball.body.velocity.x = -this.attack_speed;
     }
 };
+
+
+
+//========================//
+//  ADDED
+//========================//
+
+Platformer.Boss.prototype.get_shoted = function (enemy, fireball) {
+    "use strict";
+
+    if (fireball.hit) {
+        return;
+    };
+
+    
+    if (this.life_points > 0) {
+
+        console.log("Hit this.life_points:" + this.life_points);
+        this.life_points--;
+
+        fireball.hit = true;
+
+    } else {
+
+        console.log("Die");
+        enemy.kill();
+        fireball.kill();
+
+    };
+
+    
+};
+
+
+//========================//
+//========================//
+//========================//

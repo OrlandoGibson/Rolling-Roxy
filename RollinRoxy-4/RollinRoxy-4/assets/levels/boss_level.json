@@ -7,6 +7,7 @@
         "goal_image": { "type": "image", "source": "assets/images/goal.png" },
         "coin_image": { "type": "image", "source": "assets/images/coin2.png" },
         "fireball_image": { "type": "image", "source": "assets/images/fireboss.png" },
+        "fireball_item_image": { "type": "image", "source": "assets/images/fireball.png" },
         "stone_enemy_image": { "type": "image", "source": "assets/images/stone_enemy.png" },
         "boss_image": { "type": "image", "source": "assets/images/boss.png" },
 	"bg_music": { "type": "sound", "source": "assets/audio/levelthree.ogg" },
