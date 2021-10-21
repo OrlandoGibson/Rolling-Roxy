@@ -66,7 +66,7 @@ Platformer.Boss.prototype.shoot = function () {
     fireball = this.game_state.groups.enemy_fireballs.getFirstDead();
     fireball_position = new Phaser.Point(this.x, this.y);
     if (!fireball) {
-        fireball_properties = {"texture": "fireball_image", "group": "enemy_fireballs", "direction": "LEFT", "speed": this.attack_speed};
+        fireball_properties = {"texture": "fireboss_image", "group": "enemy_fireballs", "direction": "LEFT", "speed": this.attack_speed};
         fireball = new Platformer.Fireball(this.game_state, fireball_position, fireball_properties);
     } else {
         fireball.reset(fireball_position.x, fireball_position.y);
