@@ -1,6 +1,18 @@
 #Save The World
 This is a Phaser game created by ACM2009 Group 4 - Ryan, Christian, Melissa, Luke and Orlando
 
+STARTING THE GAME (You might need help from an adult for this part)
+---------------------
+1. Extract the SaveTheWorldGame.zip folder. You should now see a normal folder with the same name.
+2. Open the Google Chrome extension "Web Server for Chrome" which can be found here - https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en
+3. Click "Choose Folder"
+4. Search through your game folders until you see a folder called "SaveTheWorldFiles"
+5. Highlight/Click that folder and then click "Select Folder"
+6. In your "Web Server for Chrome" window, you should see a few, funny looking numbers. The first sequence of numbers should look something like this - http://127.0.0.1:8000
+7. Click that number and the server should launch the game within your Google Chrome browser window.
+
+You're now ready to Save The World!
+
 CONTROLS
 ---------------------
 
